@@ -1,0 +1,410 @@
+html {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin: auto;
+    background-image: linear-gradient(90deg, #4e668a 25%, #889bb5 25%, #889bb5 50%, #4e668a 50%, #4e668a 75%, #889bb5 75%, #889bb5 100%);
+    background-size: 200.00px 200.00px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.clicker {
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    border-right: 10px solid white;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    box-shadow: inset 0px 0px 20px 5px #000000;
+}
+
+.middle-display {
+    flex-basis: 55%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border-right: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.store {
+    flex-basis: 15%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: table-column;
+    box-shadow: inset 0px 0px 20px 5px #000000;
+    overflow-y: auto;
+    min-width: 29vh;
+}
+
+.item {
+    height: 6.75vh;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    color: #00ff00;
+    background-image: url('images/storeTileTest.png');
+    background-size: 100%;
+    user-select: none;
+}
+
+.notAfford {
+    color: #ff0000;
+    background-image: url('images/storeTileSelect.png');
+}
+
+.item:hover {
+    box-shadow: inset 0px 0px 18px 8px #e3f9ff;
+    cursor: pointer;
+}
+
+.itemInfoDiv {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5vh;
+}
+
+.itemName {
+    display: inline;
+    color: #ffffff;
+    text-shadow: 0.2vh 0.2vh 0.6vh #000000;
+    font-size: 2.35vh;
+    padding-top: 0.7vh;
+}
+
+.itemCost {
+    text-shadow: 0.2vh 0.2vh 0.6vh #000000;
+    font-size: 1.5vh;
+}
+
+.itemNum {
+    flex-basis: auto;
+    text-align: right;
+}
+
+.itemNumText {
+    opacity: 70%;
+    color: #3b3b3b;
+    font-size: 3.4vh;
+    padding-top: 1vh;
+    padding-right: 0.35vh;
+}
+
+.itemIcon {
+    height: 6.05vh;
+    padding-top: 0.7vh;
+}
+
+.clickerText {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.clickerInfo {
+    padding-top: 15%;
+}
+
+.imageStack {
+    position: relative;
+}
+
+.babyParker {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.parkersBaked {
+    display: inline;
+    color: white;
+    font-size: 5vh;
+}
+
+.parkersBakedUnit {
+    display: inline;
+    color: white;
+    font-size: 5vh;
+}
+
+.persecondDiv {
+    display: block;
+    padding-bottom: 8px;
+}
+
+.parkerPerSecond {
+    display: inline;
+    color: white;
+    font-size: 2.4vh;
+}
+
+.topBar {
+    box-shadow: inset 0px 0px 20px 5px #000000;
+    display: flex;
+    width: 100%;
+    height: 11.2%;
+    min-height: 90px;
+}
+
+.buttonColumn {
+    height: 100%;
+    width: 5.9vw;
+    min-width: 110px;
+}
+
+.topButton {
+    background-color: #5b53c7;
+    opacity: 100%;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    user-select: none;
+    cursor: pointer;
+}
+
+.buttonText {
+    padding-top: 1vh;
+    font-size: max(22px, 1.2vw);
+}
+
+.textSplashDiv {
+    height: 133px;
+    flex: 1 1 78.5%;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000000;
+    box-shadow: inset 0px 0px 50px 2px #000000;
+}
+
+.textSplash {
+    padding-top: 3.2vh;
+    font-size: 1.2vw;
+    color: white;
+}
+
+.topButton:hover {
+    box-shadow: inset 0px 0px 20px 5px #000000;
+}
+
+.mainScreen {
+    background-color: #444444;
+    background-image: url("images/darkNoise.jpg");
+    border-top: 10px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.shine {
+    position: relative;
+    width: 100%;
+    opacity: 50%;
+    left: -10px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.rotate {
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    0% { opacity: 0.8; transform: rotate(0deg)}
+    50% { opacity: 0.5; transform: rotate(180deg)}
+    100% { opacity: 0.8; transform: rotate(359deg)}
+}
+
+.bounce {
+    animation: bounce 0.3s;
+}
+  
+@keyframes bounce {
+    0% { transform: scale(0.95)}
+    40% { transform: scale(1.1)}
+    80% { transform: scale(0.99)}
+    100% { transform: scale(1.0)}
+}
+
+.bounce2 {
+    animation: bounce2 0.3s;
+}
+
+@keyframes bounce2 {
+    0% { transform: scale(0.95)}
+    40% { transform: scale(1.1)}
+    80% { transform: scale(0.99)}
+    100% { transform: scale(1.0)}
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+  
+.flex-container > div {
+    margin: auto;
+    font-size: 30px;
+    height: 100%;
+}
+
+.copyright {
+    background-color: #000000;
+    color: white;
+    width: 143px;
+    opacity: 50%;
+    font-size: 10px;
+    padding-left: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.updateLog {
+    color: white;
+    background-image: url("images/darkNoise.jpg");
+}
+
+.logEntry {
+    padding-left: 15px;
+}
+
+.version {
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.date {
+    font-size: 20px;
+    padding-bottom: 5px;
+    color:#505050;
+}
+
+.featuresHeader {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.featuresItem {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.dividerContainer {
+    padding-top: 10px;
+}
+
+.textDivider {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.optionsScreen {
+    display: none;
+    color: white;
+}
+
+.optionDiv {
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+    user-select: none;
+}
+
+.optionToggleButton {
+    background-color: #101010;
+    color: #707070;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #909090;
+}
+
+.optionToggleButton:hover {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.toggled {
+    color: white;
+    box-shadow: inset 0px 0px 10px 1px #404040;
+}
+
+.toggleText {
+    font-size: 18px;
+    padding-top: 7%;
+}
+
+.statsScreen {
+    display: none;
+    color: white;
+}
+
+.statDiv {
+    padding-left: 15px;
+    padding-top: 10px;
+    display: block;
+}
+
+.statName {
+    font-size: 18px;
+    display: inline;
+}
+
+.statNumber {
+    font-size: 18px;
+    display: inline;
+}
+
+.pageTitleDiv {
+    text-align: center;
+}
+
+.pageTitle {
+    padding-top: 15px;
+    font-size: calc(18px + 2.2vh);
+    border: 1px solid #909090;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+.mainGame {
+    display: block;
+}
+
+.interactionOff {
+    pointer-events: none;
+}

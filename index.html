@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <title>Baby Parker Clicker</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <canvas id="canvas">
+            terst
+        </canvas>
+        <div class="flex-container">
+            <div class="clicker" id="clickerDiv">
+                <div class="clickerInfo">
+                    <div class="clickerText" id="clickerTextDiv">
+                        <div class="parkersBaked" id="parkersBaked">0</div>
+                        <div class="parkersBakedUnit" id="parkersBakedUnit">Parkers</div>
+                        <div class="persecondDiv">
+                            <div class="parkerPerSecond">per second: </div>
+                            <div class="parkerPerSecond" id="parkerPerSecond">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imageStack">
+                    <img src="images/shine4.png" class="shine rotate"></img>
+                    <img src="images/BabyParker.png" class="babyParker" id="babyParker"></img>
+                    <img src="images/BabyParkerBlink.png" class="babyParker interactionOff" id="babyParkerBlink"></img>
+                    <img src="images/BabyParkerWink.png" class="babyParker interactionOff" id="babyParkerWink"></img>
+                </div>
+                <div class="copyright">
+                    Baby Parker Corporation &#169
+                </div>
+            </div>
+            <div class="middle-display">
+                <div class="topBar">
+                    <div class="buttonColumn">
+                        <div class="topButton" id="options">
+                            <div class="buttonText">
+                                Options
+                            </div>
+                        </div>
+                        <div class="topButton" id="stats">
+                            <div class="buttonText">
+                                Stats
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textSplashDiv">
+                        <div class="textSplash">
+                            Visit babyparker.org for all your Baby Parker needs!
+                        </div>
+                    </div>
+                    <div class="buttonColumn">
+                        <div class="topButton" id="info">
+                            <div class="buttonText">
+                                Info
+                            </div>
+                        </div>
+                        <div class="topButton" id="surpriseButton">
+                            <div class="buttonText">
+                                Button?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainScreen">
+                    <div class="mainGame" id="mainGame">
+
+                    </div>
+                    <div class="optionsScreen" id="optionsScreen">
+                        <div class="pageTitleDiv">
+                            <div class="pageTitle">
+                                Options
+                            </div>
+                        </div>
+                        <div class="optionDiv">
+                            <div class="optionToggleButton" id="muteButton">
+                                <div class="toggleText" id="muteButtonText">
+                                    Mute: Off
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statsScreen" id="statsScreen">
+                        <div class="pageTitleDiv">
+                            <div class="pageTitle">
+                                Stats
+                            </div>
+                        </div>
+                        <div class="statDiv">
+                            <div class="statName">
+                                Parkers Created (all time):
+                            </div>
+                            <div class="statNumber" id="allTimeParker">
+                                0
+                            </div>
+                        </div>
+                        <div class="statDiv">
+                            <div class="statName">
+                                Total Parker Clicks:
+                            </div>
+                            <div class="statNumber" id="totalClicks">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="updateLog" id="updateLog">
+                        <div class="logEntry">
+                            <div class="version">Baby Parker Clicker v1.1.2</div>
+                            <div class="date">2022/06/09</div>
+                            <div class="featuresHeader">Features added:</div>
+                            <div class="featuresItem">- Various miscellaneous improvements</div>
+                        </div>
+                        <div class="dividerContainer">
+                            <div class="textDivider"></div>
+                        </div>
+                        <div class="logEntry">
+                            <div class="version">Baby Parker Clicker v1.1.1</div>
+                            <div class="date">2022/06/05</div>
+                            <div class="featuresHeader">Features added:</div>
+                            <div class="featuresItem">- Fixed bug that caused images not to load</div>
+                        </div>
+                        <div class="dividerContainer">
+                            <div class="textDivider"></div>
+                        </div>
+                        <div class="logEntry">
+                            <div class="version">Baby Parker Clicker v1.1.0</div>
+                            <div class="date">2022/06/05</div>
+                            <div class="featuresHeader">Features added:</div>
+                            <div class="featuresItem">- Clicking gains now gains 0.1 of per second rate</div>
+                            <div class="featuresItem">- Graphical improvements</div>
+                            <div class="featuresItem">- Scaling for different window sizes</div>
+                            <div class="featuresItem">- Options and stats added</div>
+                        </div>
+                        <div class="dividerContainer">
+                            <div class="textDivider"></div>
+                        </div>
+                        <div class="logEntry">
+                            <div class="version">Baby Parker Clicker v1.0.0</div>
+                            <div class="date">2022/06/01</div>
+                            <div class="featuresHeader">Features added:</div>
+                            <div class="featuresItem">- Various features! Added to the game!</div>
+                            <div class="featuresItem">- Laughs, gags, maybe even good times....</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store">
+                <div class="item notAfford" id="building0">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Baby Trevor</div>
+                        <div class="itemCost" id="itemCost0">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum0">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building1">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">                  
+                        <div class="itemName">Baby Daniel</div>
+                        <div class="itemCost" id="itemCost1">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum1">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building2">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Baby Ian</div>
+                        <div class="itemCost" id="itemCost2">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum2">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building3">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Baby Joey</div>
+                        <div class="itemCost" id="itemCost3">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum3">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building4">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Baby Nic</div>
+                        <div class="itemCost" id="itemCost4">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum4">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building5">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Park-a-Stan</div>
+                        <div class="itemCost" id="itemCost5">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum5">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building6">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Place, Japan 😮</div>
+                        <div class="itemCost" id="itemCost6">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum6">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building7">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Dubai Portal</div>
+                        <div class="itemCost" id="itemCost7">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum7">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building8">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Smu2mu2</div>
+                        <div class="itemCost" id="itemCost8">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum8">0</div>
+                    </div>
+                </div>
+                <div class="item notAfford" id="building9">
+                    <img src="images/korosan.png" class="itemIcon"></img>
+                    <div class="itemInfoDiv">
+                        <div class="itemName">Vtuber 配信</div>
+                        <div class="itemCost" id="itemCost9">15</div>
+                    </div>
+                    <div class="itemNum">
+                        <div class="itemNumText" id="itemNum9">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
